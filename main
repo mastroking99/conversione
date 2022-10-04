@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  int val, x;
+  cout<<"Inserire valore da convertire"<<endl;
+  cin>>val;
+  cout<<"Inserire tipologia di conversione"<<endl;
+  cout<<"1. Metri decimetri"<<endl;
+  cout<<"2. Metri centimetri"<<endl;
+  cout<<"3. Metri millimetri"<<endl;
+  cout<<"4. Metri decametri"<<endl;
+  cout<<"5. Metri ettometri"<<endl;
+  cout<<"6. Metri chilometri"<<endl;
+  cin>>x;
+  switch(x)
+  {
+    case 1:
+      val= val/10;
+      cout<<"il valore convertito vale:"<<val;
+      break;
+     
+    case 2:
+      val= val/100;
+      cout<<"il valore convertito vale:"<<val;
+      break;
+      
+    case 3:
+      val= val/1000;
+      cout<<"il valore convertito vale:"<<val;
+      break;
+      
+    case 4:
+      val= val*10;
+      cout<<"il valore convertito vale:"<<val;
+      break;
+      
+    case 5:
+      val= val*100;
+      cout<<"il valore convertito vale:"<<val;
+      break;
+      
+    case 6:
+      val= val*1000;
+      cout<<"il valore convertito vale:"<<val;
+      break;
+  }
+}
